@@ -1,0 +1,62 @@
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background ;
+    -fx-background-insets: 0, 0 0 1 0 ;
+    -fx-background-radius: 0 ;
+    -fx-font-size: 14;
+    -fx-font-family: "Tahoma";
+}
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-background ;
+}
+.empty{
+    -fx-background-radius: 8px;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-family: "Tahoma";
+    -fx-background-color   : transparent;
+}
+Button {
+    -fx-background-radius: 8px;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-family: "Tahoma";
+    -fx-background-color   : linear-gradient(#035afc, #1f50c2);
+}
+.empty{
+    -fx-background-radius: 8px;
+    -fx-border-color: #035afc;
+    -fx-border-width: 1 1 1 1;
+    -fx-border-radius: 8px;
+    -fx-text-fill: black;
+    -fx-font-size: 14;
+    -fx-font-family: "Tahoma";
+    -fx-background-color   : transparent;
+}
+.button:pressed {
+    -fx-background-color: #1f50c2;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-family: "Tahoma";
+}
+.button:hover{
+    -fx-background-color: #5f8dc2;
+    -fx-text-fill: -fx-text-base-color;
+}
+.label{
+    -fx-text-fill: RED;
+    -fx-font-size: 12;
+    -fx-font-family: "Tahoma";
+}
+
+.error{
+    -fx-text-fill: RED;
+        -fx-font-size: 12;
+        -fx-font-family: "Tahoma";
+}
+
+.heading{
+        -fx-text-fill: BLACK;
+        -fx-font-size: 24;
+        -fx-font-weight: bold;
+        -fx-font-family: "Tahoma";
+}

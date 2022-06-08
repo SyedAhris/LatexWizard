@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox stylesheets="/startPageStyles.css" alignment="CENTER" spacing="15" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.latexwizard.StartPageController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <Label styleClass="heading" text="Title Details" />
+        <VBox alignment="CENTER">
+            <children>
+                <TextField focusTraversable="false" maxHeight="40" maxWidth="300" prefHeight="40" prefWidth="300" promptText="Enter Title" fx:id="title"/>
+                <HBox alignment="CENTER_LEFT" maxHeight="40" maxWidth="300">
+                    <children>
+                        <Label fx:id="titleEmpty"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" >
+            <children>
+                <TextField focusTraversable="false" maxHeight="40" maxWidth="300" prefHeight="40" prefWidth="300" promptText="Enter subTitle" fx:id="subTitle"/>
+                <HBox alignment="CENTER_LEFT" maxHeight="40" maxWidth="300">
+                    <children>
+                        <Label fx:id="subTitleEmpty"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER">
+            <children>
+                <TextField focusTraversable="false" maxHeight="40" maxWidth="300" prefHeight="40" prefWidth="300" promptText="Enter Instrcutor" fx:id="instructorName"/>
+                <HBox alignment="CENTER_LEFT" maxHeight="40" maxWidth="300">
+                    <children>
+                        <Label fx:id="instructorNameEmpty"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox alignment="CENTER" >
+            <children>
+                <TextField focusTraversable="false" maxHeight="40" maxWidth="300" prefHeight="40" prefWidth="300" promptText="Enter Semester Date" fx:id="semDate"/>
+                <HBox alignment="CENTER_LEFT" maxHeight="40" maxWidth="300">
+                    <children>
+                        <Label fx:id="semDateEmpty"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER" spacing="20">
+            <children>
+                <Button prefHeight="35" prefWidth="150" text="Next" fx:id="next" onAction="#nextHandler"/>
+            </children>
+        </HBox>
+    </children>
+</VBox>

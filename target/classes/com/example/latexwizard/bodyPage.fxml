@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox stylesheets="/startPageStyles.css" style="-fx-padding: 15 15 15 15;" spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.latexwizard.BodyPageController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label styleClass="heading" text="Body Details"/>
+    </children>
+    <children>
+        <TextArea prefHeight="500"  fx:id="body"/>
+    </children>
+    <children>
+        <HBox alignment="CENTER" spacing="5">
+            <children>
+                <Button styleClass="empty" prefHeight="35" prefWidth="150" text="+ Section" fx:id="section" onAction="#sectionHandler" />
+                <Button styleClass="empty" prefHeight="35" prefWidth="150" text="+ Subsection" fx:id="subsection" onAction="#subsectionHandler" />
+                <Button styleClass="empty" prefHeight="35" prefWidth="150" text="+ Code" fx:id="code" onAction="#codeHandler" />
+                <Button styleClass="empty" prefHeight="35" prefWidth="150" text="+ Path" fx:id="path" onAction="#pathHandler" />
+                <Button styleClass="empty" prefHeight="35" prefWidth="150" text="+ List" fx:id="list" onAction="#listHandler" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" spacing="5">
+            <children>
+                <Button styleClass="empty" prefHeight="35" prefWidth="150" text="+ Right Arrow" fx:id="rightArrow" onAction="#rightArrowHandler" />
+                <Button styleClass="empty" prefHeight="35" prefWidth="150" text="+ VSpace" fx:id="vspace" onAction="#vspaceHandler" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" spacing="5">
+            <children>
+                <Button prefHeight="35" prefWidth="150" text="Back" fx:id="back" onAction="#backHandler" />
+                <Button prefHeight="35" prefWidth="150" text="Create Document" fx:id="create" onAction="#createHandler" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" spacing="5">
+            <children>
+                <Label text="" styleClass="error" />
+            </children>
+        </HBox>
+    </children>
+
+
+</VBox>
